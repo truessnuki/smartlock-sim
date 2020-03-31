@@ -20,7 +20,7 @@ C_DEPS += \
 src/nuki/hal/clutch_eng/%.o: ../src/nuki/hal/clutch_eng/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cygwin C Compiler'
-	gcc -DSIMULATION -DWIN32 -I"../src/nuki" -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	gcc -DSIMULATION -DWIN32 -I"../src/nuki" -O3 -Wall -c -fmessage-length=0 -std=c99 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
