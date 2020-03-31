@@ -1,0 +1,3 @@
+[submodule "src/nuki"]
+	path = src/nuki
+	url = git@github.com:truessnuki/smartlock-fw.git
