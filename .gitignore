@@ -2,3 +2,5 @@ Debug
 *.o
 *.d
 *.exe
+/Release/
+*.stackdump

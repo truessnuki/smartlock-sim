@@ -4,16 +4,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../src/nuki/pl/actions.c \
-../src/nuki/pl/exceptions.c 
+../src/nuki/pl/actions.c 
 
 OBJS += \
-./src/nuki/pl/actions.o \
-./src/nuki/pl/exceptions.o 
+./src/nuki/pl/actions.o 
 
 C_DEPS += \
-./src/nuki/pl/actions.d \
-./src/nuki/pl/exceptions.d 
+./src/nuki/pl/actions.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

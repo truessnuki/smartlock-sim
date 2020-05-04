@@ -1,5 +1,9 @@
 #include "common.h"
 
+#ifndef SIMULATION
+#error "Please #define SIMULATION for this project"
+#endif
+
 #include "hal/uart.h"
 #include "hal/clock.h"
 #include "hal/clutch_eng.h"
@@ -48,17 +52,13 @@ int main()
     {
         status = dispatcher_task();
 
-#ifdef SIMULATION
         if(getstatus(status) == STATUS_KILL_SIMULATION)
         {
             break;
-        } else
-#endif
-        if(getstatus(status) != STATUS_SUCCESS)
+        } else if(getstatus(status) != STATUS_SUCCESS)
         {
             log_e("%s: %s", compstr(status), errstr(status));
         }
-
 
         status = keyturn_ctrl_task();
 
