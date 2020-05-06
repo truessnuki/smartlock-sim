@@ -199,7 +199,7 @@
                                     								
                                 </option>
                                 								
-                                <option id="gnu.c.compiler.option.warnings.toerrors.358616667" name="Warnings as errors (-Werror)" superClass="gnu.c.compiler.option.warnings.toerrors" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+                                <option id="gnu.c.compiler.option.warnings.toerrors.358616667" name="Warnings as errors (-Werror)" superClass="gnu.c.compiler.option.warnings.toerrors" useByScannerDiscovery="false" value="false" valueType="boolean"/>
                                 								
                                 <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.319865859" superClass="cdt.managedbuild.tool.gnu.c.compiler.input.cygwin"/>
                                 							
