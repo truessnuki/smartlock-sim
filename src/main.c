@@ -1,9 +1,10 @@
-#include "common.h"
+// basic
+#include <nuki_common.h>
 
 #ifndef SIMULATION
 #error "Please #define SIMULATION for this project"
 #endif
-
+// hal
 #include "hal/uart.h"
 #include "hal/clock.h"
 #include "hal/clutch_eng.h"
@@ -11,14 +12,17 @@
 #include "hal/led.h"
 #include "hal/hall_sensor.h"
 #include "hal/adc.h"
-
-#include "app/keyturn_ctrl/keyturn_ctrl.h"
-#include "app/logging/logging.h"
+// sal
+#include "sal/keyturn_ctrl/keyturn_ctrl.h"
+#include "sal/logging/logging.h"
 #include "app/dispatcher/dispatcher.h"
 
 #include <string.h>
-
-#include <windows.h>
+#if defined(WIN64) || defined(WIN32)
+#include <windows.h>    // Sleep
+#elif defined(LINUX)
+#error "import library for sleep function"
+#endif
 
 int main()
 {

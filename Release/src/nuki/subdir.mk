@@ -4,13 +4,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../src/nuki/common.c 
+../src/nuki/nuki_common.c 
 
 OBJS += \
-./src/nuki/common.o 
+./src/nuki/nuki_common.o 
 
 C_DEPS += \
-./src/nuki/common.d 
+./src/nuki/nuki_common.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

@@ -8,6 +8,9 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include src/nuki/sal/settings/subdir.mk
+-include src/nuki/sal/logging/subdir.mk
+-include src/nuki/sal/keyturn_ctrl/subdir.mk
 -include src/nuki/pl/subdir.mk
 -include src/nuki/hal/util/subdir.mk
 -include src/nuki/hal/uart/subdir.mk
@@ -18,9 +21,6 @@ RM := rm -rf
 -include src/nuki/hal/clock/subdir.mk
 -include src/nuki/hal/adc/subdir.mk
 -include src/nuki/hal/subdir.mk
--include src/nuki/app/settings/subdir.mk
--include src/nuki/app/logging/subdir.mk
--include src/nuki/app/keyturn_ctrl/subdir.mk
 -include src/nuki/app/dispatcher/subdir.mk
 -include src/nuki/subdir.mk
 -include src/subdir.mk

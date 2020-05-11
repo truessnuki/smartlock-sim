@@ -15,10 +15,6 @@ C_DEPS :=
 SUBDIRS := \
 src \
 src/nuki/app/dispatcher \
-src/nuki/app/keyturn_ctrl \
-src/nuki/app/logging \
-src/nuki/app/settings \
-src/nuki \
 src/nuki/hal/adc \
 src/nuki/hal \
 src/nuki/hal/clock \
@@ -28,5 +24,9 @@ src/nuki/hal/led \
 src/nuki/hal/turn_eng \
 src/nuki/hal/uart \
 src/nuki/hal/util \
+src/nuki \
 src/nuki/pl \
+src/nuki/sal/keyturn_ctrl \
+src/nuki/sal/logging \
+src/nuki/sal/settings \
 
