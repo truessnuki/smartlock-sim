@@ -21,13 +21,18 @@
 #if defined(WIN64) || defined(WIN32)
 #include <windows.h>    // Sleep
 #elif defined(LINUX)
-#error "import library for sleep function"
+#include <unistd.h>
+void Sleep(unsigned int milliseconds)
+{
+    usleep(milliseconds * 1000);
+}
 #endif
 
 int main()
 {
     // hal initialize
     uart_init(115200);
+
 
     log_init();
 
