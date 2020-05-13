@@ -4,3 +4,4 @@ Debug
 *.exe
 Debug
 *.stackdump
+/Release/
